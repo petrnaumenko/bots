@@ -1,0 +1,55 @@
+#VRML_SIM R2025a utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/floors/protos/RectangleArena.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/robots/gctronic/e-puck/protos/E-puck.proto"
+
+WorldInfo {
+}
+Viewpoint {
+  orientation 0.16719500643132434 -0.059326773920471754 -0.9841372687387764 3.929212114685204
+  position 1.5241258207105177 -1.5220101985915047 0.743367754525388
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+  floorSize 0.88 0.88
+  floorTileSize 0.88 0.88
+  floorAppearance PBRAppearance {
+    baseColorMap ImageTexture {
+      url [
+        "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/samples/curriculum/worlds/textures/arena_floor.jpg"
+      ]
+    }
+    roughness 1
+    metalness 0
+  }
+  wallHeight 0.05
+  wallAppearance PBRAppearance {
+    baseColorMap ImageTexture {
+      url [
+        "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/samples/curriculum/worlds/textures/arena_wall.jpg"
+      ]
+    }
+    roughness 1
+    metalness 0
+  }
+}
+E-puck {
+  hidden position_0_0 -27.87102026347572
+  hidden position_0_1 -25.38185559119922
+  hidden linearVelocity_0 -8.250116245492979e-07 6.448160157096606e-07 4.048653702662823e-09
+  hidden angularVelocity_0 -4.303539711764527e-05 -5.506175688186742e-05 8.926569608536636e-13
+  hidden rotation_1 0 -1 0 2.738279034757375
+  hidden linearVelocity_1 -1.1008294063318292e-06 8.603908186566138e-07 2.4214807960554745e-11
+  hidden angularVelocity_1 -4.303538332158939e-05 -5.506174044138303e-05 2.0401402098457108e-10
+  hidden rotation_2 0 -1 0 0.24911436248087337
+  hidden linearVelocity_2 -1.1008293992963058e-06 8.603908274130981e-07 2.4277158066775092e-11
+  hidden angularVelocity_2 -4.303538453165746e-05 -5.506173955866639e-05 -2.0222688676286407e-10
+  translation 0.03396813013712684 -0.12748612658604666 -6.39418824434513e-05
+  rotation 0.0007192401088379283 0.002088196013663081 -0.9999975610625629 0.6634119543752395
+  controller "hand_controller"
+}
