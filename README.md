@@ -26,7 +26,7 @@
 ## Как начать
 
 ```bash
-git clone https://github.com/<your-username>/webots-python-curriculum.git
+git clone https://github.com/petrnaumenko/webots-python-curriculum.git
 cd webots-python-curriculum
 ```
 
