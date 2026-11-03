@@ -20,6 +20,8 @@ lm = robot.getDevice('left wheel motor')
 rm = robot.getDevice('right wheel motor')
 lm.setPosition(float('inf'))
 rm.setPosition(float('inf'))
+lm.setVelocity(0.0)
+rm.setVelocity(0.0)
 
 ls = rs = 0.0
 
